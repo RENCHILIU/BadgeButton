@@ -4,7 +4,8 @@
 //
 //  Created by liurenchi on 3/26/18.
 //  Copyright © 2018 lrc. All rights reserved.
-//
+//This  repository link: https://github.com/RENCHILIU/BadgeButton
+//My personal website : https://renchiliu.github.io/
 
 import UIKit
 
