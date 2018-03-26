@@ -10,6 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var myBadgeButton: BadgeButton!
+    
+   
+    @IBAction func HideBadgeWhenZero(_ sender: UISwitch) {
+        if sender.isOn {
+            self.myBadgeButton.hiddenWhenZero = true
+        }else{
+            self.myBadgeButton.hiddenWhenZero = false
+        }
+    }
+    @IBAction func changeValue(_ sender: UIButton) {
+        if sender.tag == 1{
+            self.myBadgeButton.badgeNumber = self.myBadgeButton.badgeNumber + 1
+        }else{
+            self.myBadgeButton.badgeNumber = self.myBadgeButton.badgeNumber - 1
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
